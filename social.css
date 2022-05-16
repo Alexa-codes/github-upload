@@ -1,0 +1,401 @@
+@import url("http://fonts.cdnfonts.com/css/century-gothic");
+
+/*resets page to no margins*/
+* {
+  margin: 0;
+  font-family: "Century Gothic", sans-serif;
+}
+
+/*background color*/
+body {
+  background: linear-gradient(to top, #c79098 0%, #e6d0cc 100%);
+}
+/*"John Doe" sizing*/
+h1 {
+  font-size: 75px;
+  height: 75px;
+}
+/*"About me"sizing*/
+h2 {
+  font-size: 30px;
+  height: 25px;
+  padding: 15px;
+  line-height: 0;
+  margin: 10px 0;
+}
+/*paragraph styling*/
+.p {
+  height: 200px;
+  margin: 50px;
+}
+/*main profile picture styling*/
+.proffyPic {
+  height: 480px;
+  width: 480px;
+  background-color: lightgray;
+  float: left;
+  left: 20px;
+  right: 40px;
+  margin-top: 0;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 250px;
+}
+
+/* Second pic with comment box */
+.commentPic {
+  float: left;
+  margin-left: 210px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 175px;
+  border-radius: 150px;
+}
+
+/* Form Element styling */
+input[type="text"] {
+  border-radius: 10px;
+  margin-bottom: 4px;
+  height: 29px;
+  width: 21.5%;
+  margin-top: 50px;
+  background-color: #eadfdf;
+}
+
+input[type="date"] {
+  border-radius: 10px;
+  height: 32px;
+  width: 21.5%;
+  margin-top: 50px;
+  margin-bottom: 4.5px;
+  float: right;
+  margin-right: 305px;
+  background-color: #eadfdf;
+}
+
+textarea[name="comment"] {
+  border-radius: 10px;
+  height: 100px;
+  width: 44%;
+  margin-right: 70px;
+  background-color: #eadfdf;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  height: 30px;
+  width: 85px;
+  background-color: white;
+  float: right;
+  margin-right: 592px;
+  margin-top: 0px;
+  background-color: #eadfdf;
+}
+
+input[type="reset"] {
+  border-radius: 10px;
+  height: 30px;
+  width: 85px;
+  background-color: white;
+  position: relative;
+  left: 684px;
+  background-color: #eadfdf;
+}
+/* End Form Element styling */
+
+.options {
+  max-width: 20px;
+}
+
+/*timeline comments table styling*/
+table {
+  border-collapse: collapse;
+  width: 750px;
+  height: 175px;
+  text-align: center;
+  verticle-align: middle;
+  margin-left: 250px;
+  font-weight: bold;
+  top: -200px;
+}
+
+/*search bar*/
+input[id="search"] {
+  position: relative;
+  width: 200px;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+/*table data*/
+td {
+  font-weight: normal;
+}
+/*table rows*/
+tr {
+  border-bottom: 1.5px solid black;
+}
+/*footer/social media links*/
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: #99676e;
+  bottom: 0px;
+  margin-top: 100px;
+}
+/*profile, friends and setting buttons*/
+.button {
+  border-radius: 6px;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+  font-family: verdana;
+  height: 40px;
+  margin: 10px;
+}
+/*turns profile button lavender when you hover over it*/
+.button:hover {
+  background-color: lavender;
+  transition: 0.7s;
+}
+
+.friendBTN {
+  background-color: transparent;
+  border-color: white;
+  font-weight: bold;
+  border-style: solid;
+  font-size: 18px;
+  margin-left: 870px;
+  font-family: verdana;
+  border-color: #e6d0cc;
+}
+/*turns button font lavender when hover*/
+.friendBTN:hover {
+  color: lavender;
+  transition: 0.7s;
+}
+.settingBTN {
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 15px;
+  font-family: verdana;
+  border-color: #e6d0cc;
+}
+/*turns button font lavender when hover*/
+.settingBTN:hover {
+  color: lavender;
+  transition: 0.7s;
+}
+
+/* Footer icon styling */
+.facebook {
+  margin-top: 8.5px;
+  margin-left: 22%;
+}
+.twitter {
+  margin-top: 8.5px;
+  margin-left: 20%;
+}
+.insta {
+  margin-top: 8.5px;
+  margin-left: 20%;
+}
+/*repeat all styling for mobile version*/
+@media screen and (max-width: 1000px) {
+  /*hides extra white space on right hand side*/
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /*reset margin to none*/
+  * {
+    margin: 0;
+  }
+
+  .friendBTN {
+    font-size: 16px;
+    margin-left: 50px;
+  }
+  .settingBTN {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .button {
+    border-radius: 6px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    font-family: verdana;
+    height: 35px;
+    margin: 10px;
+  }
+
+  .proffyPic {
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 37.5px;
+    margin-left: -1px;
+    margin-right: 0;
+  }
+
+  .commentPic {
+    height: 85px;
+    width: 85px;
+    position: relative;
+    margin-left: 146px;
+    top: -520px;
+  }
+
+  h1 {
+    max-width: 100%;
+    font-size: 32px;
+    font-weight: normal;
+    background-color: #99676e;
+    text-align: left;
+    padding-top: 24px;
+  }
+
+  h2 {
+    margin: -20 0 0 10px;
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 12px;
+    width: 50%;
+    margin: -5px 0 300px 41%;
+    position: relative;
+    top: -174px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  /*change height of navigation div*/
+  .navigation {
+    height: 20px;
+  }
+
+  /* Form Element styling */
+  input[type="text"] {
+    border-radius: 6px;
+    margin-left: 30px;
+    margin-right: 7px;
+    height: 20px;
+    width: 39%;
+    position: relative;
+    top: -560px;
+  }
+
+  input[type="date"] {
+    border-radius: 6px;
+    height: 21px;
+    width: 39%;
+    margin-right: 30px;
+    position: relative;
+    top: -560px;
+  }
+
+  textarea[name="comment"] {
+    border-radius: 6px;
+    height: 70px;
+    width: 87%;
+    vertical-align: middle;
+    margin-left: 22px;
+    margin-top: 10px;
+    position: relative;
+    top: -560px;
+  }
+
+  input[type="button"] {
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: white;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    top: -550px;
+    left: -146px;
+    position: relative;
+  }
+
+  input[type="submit"] {
+    position: relative;
+    margin: 0;
+    right: 30%;
+    top: -550px;
+    height: 30px;
+    width: 80px;
+    height: 25px;
+    width: 20%;
+  }
+
+  input[type="reset"] {
+    position: relative;
+    margin: 0;
+    left: 30%;
+    top: -550px;
+    height: 30px;
+    width: 80px;
+    height: 25px;
+    width: 20%;
+  }
+  /* End Form Element styling */
+
+  table {
+    width: 90%;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -540px;
+    bottom: -200pxpx;
+  }
+
+  input[id="search"] {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 0;
+  }
+
+  /*social media icons div*/
+  icons {
+    width: 100%;
+    position: relative;
+    top: -600px;
+  }
+
+  /*footer icons*/
+  .facebook {
+    margin-top: 8.5px;
+    margin-left: 16%;
+  }
+  .twitter {
+    margin-top: 8.5px;
+    margin-left: 14%;
+  }
+  .insta {
+    margin-top: 8.5px;
+    margin-left: 14%;
+  }
+
+  .footer {
+    position: fixed;
+    background-color: #99676e;
+    bottom: 0;
+    max-width: 100%;
+    margin-top: -600px;
+  }
+} /*End media query*/

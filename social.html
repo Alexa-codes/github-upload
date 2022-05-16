@@ -1,0 +1,147 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" type="text/css" href="social.css" />
+</head>
+
+<body>
+
+  <div class="navigation">
+    <!-- Navigation Menu -->
+    <button class="button">My Profile</button>
+
+    <button class="friendBTN">Friends</button>
+
+    <button class="settingBTN">Settings</button>
+
+    <hr style="opacity:.4;">
+
+  </div> <!-- End Navigation Menu -->
+
+  <!--Main profile picture-->
+  <img class="proffyPic" src="https://us.123rf.com/450wm/meysye/meysye1904/meysye190400002/121250278-female-silhoutte-avatar-default-avatar-profile-picture-photo-placeholder.jpg?ver=6">
+
+  <BR>
+  <BR>
+  <!--Header and sub header  -->
+  <h1>Cassie Haven😊</h1>
+  </div>
+
+  <div id="abtMe">
+    <h2>About Me<h2><BR>
+  </div>
+  <BR>
+  <BR>
+  <BR>
+  <!--body content/paragraph  -->
+  <div class="paragraph">
+    <p>Vestibulum ac metus eget risus cursus rhoncus non sed nulla. Phas<BR>ellus in ipsum feugiat,vulputate magna vel, pretium velit. Suspendi<BR>sse rhoncus semper ultrices. Mauris sollicitu. Dinquis lorem vitae tinc<BR>idunt. In hac habitasse platea dictumst.estibulum ac metus eget ris<BR>us cursus rhoncus non sed nulla. Phasellus in ipsum feugiat,vulputat.<BR> magna vel, pretium velit. Suspendisse rhoncus semper ultrices Mau.<BR>Sollicitudinquis lorem vitae tincidunt. In hac habitasse platee.</p>
+  </div> <!-- End paragraph -->
+
+  <BR>
+  <BR>
+  <BR>
+  <BR>
+  <BR>
+
+  <!--Second profile photo for the form  -->
+  <img class="commentPic" src="https://us.123rf.com/450wm/meysye/meysye1904/meysye190400002/121250278-female-silhoutte-avatar-default-avatar-profile-picture-photo-placeholder.jpg?ver=6">
+
+  <div id="error"></div>
+  <!--comment form  -->
+  <form id="form" class="formClass">
+
+    <input id="name" type="text" placeholder="Name" required> </input>
+
+    <input id="date" type="date" placeholder="Date" class="date-input" name="Date" required><BR>
+
+    <textarea id="commentBox" name="comment" placeholder="Leave a comment!" required></textarea><BR>
+
+    <!--added a reset button called "clear" to clear the comment form after comments are submitted-->
+    <input id="enter" type="submit" value="Submit" required>
+    <input id="reset" type="reset" value="Clear" />
+
+  </form>
+  <!--comment table-->
+  <div class="comments">
+    <table class="timeline" id="comment-table">
+      <!--search bar-->
+      <input type="text" id="search" onkeyup="searchNames()" placeholder="Search names..">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Posts</th>
+          <th>Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="name_row">Aubree</td>
+          <td>Welcome!</td>
+          <td>03-02-2022</td>
+          <td>
+            <form>
+
+              <select class="options">
+                <option value=""></option>
+                <option value="comment-edit">Edit</option>
+                <option value="comment-save">Save</option>
+                <option value="comment-delete">Delete</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td id="name_row">Rylee</td>
+          <td>Hey sis!</td>
+          <td>04-01-2022</td>
+          <td>
+            <form>
+              <select class="options">
+                <option value=""></option>
+                <option value="comment-edit">Edit</option>
+                <option value="comment-save">Save</option>
+                <option value="comment-delete">Delete</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td id="name_row">Channing</td>
+          <td>Hi everyone!</td>
+          <td>04-15-2022</td>
+          <td>
+            <form>
+              <select class="options">
+                <option value=""></option>
+                <option value="comment-edit">Edit</option>
+                <option value="comment-save">Save</option>
+                <option value="comment-delete">Delete</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--social media links-->
+    <footer class="footer">
+      <div class="icons">
+        <a href="https://www.facebook.com/">
+          <img class="facebook" alt="Facebook" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" width="50" height="50" ;></a>
+
+        <a href="https://twitter.com/">
+          <img class="twitter" alt="Twitter logo" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png" width="50" height="50" ;></a>
+
+        <a href="https://www.instagram.com/">
+          <img class="insta" alt="IG logo" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/instagram2-512.png" width="50" height="50"></a>
+      </div>
+    </footer>
+    <script src="social.js"></script>
+</body>
+
+</html>
